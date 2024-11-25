@@ -1,0 +1,23 @@
+{
+  "name": "tdd-starter-vanilla",
+  "version": "0.0.1",
+  "description": "A starter project for TDD with vanilla JavaScript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simonrevill/tdd-starter-vanilla.git"
+  },
+  "keywords": [
+    "tdd",
+    "javascript"
+  ],
+  "author": "Simon Revill",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/simonrevill/tdd-starter-vanilla/issues"
+  },
+  "homepage": "https://github.com/simonrevill/tdd-starter-vanilla#readme"
+}
