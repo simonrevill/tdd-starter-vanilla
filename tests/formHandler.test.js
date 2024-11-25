@@ -16,12 +16,12 @@ describe("form tests", () => {
       .withHandler(formHandler(mockHandler))
       .build();
 
+    const input = screen.getByRole("textbox", { name: "First name" });
+    const submitButton = screen.getByRole("button", { name: "Submit" });
+
     // Act
-    await user.type(
-      screen.getByRole("textbox", { name: "First name" }),
-      "John Doe"
-    );
-    await user.click(screen.getByRole("button", { name: "Submit" }));
+    await user.type(input, "John Doe");
+    await user.click(submitButton);
 
     // Assert
     expect(mockHandler).toHaveBeenCalledWith([["First name", "John Doe"]]);
