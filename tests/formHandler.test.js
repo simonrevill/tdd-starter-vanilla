@@ -9,12 +9,12 @@ describe("form tests", () => {
     // Arrange
     const user = userEvent.setup();
     const mockHandler = jest.fn();
-    const handlerUnderTest = formHandler(mockHandler);
+    const handler = formHandler(mockHandler);
 
     new FormBuilder()
       .withInput("First name", "firstName")
       .withSubmit("Submit")
-      .withHandler(handlerUnderTest)
+      .withHandler(handler)
       .build();
 
     const input = screen.getByRole("textbox", { name: "First name" });
